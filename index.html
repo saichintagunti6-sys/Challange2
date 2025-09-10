@@ -33,7 +33,7 @@
     }
     nav a:hover { color: orange; }
 
-    /* Hero: uses an <img> so we can fallback if it fails */
+    /* Hero */
     .hero {
       position: relative;
       height: 70vh;
@@ -73,19 +73,12 @@
       overflow: hidden;
       box-shadow: 0 4px 10px rgba(0,0,0,0.1);
       transition: transform .3s;
-      min-height: 320px;
       display: flex;
       flex-direction: column;
     }
     .card:hover {
       transform: translateY(-8px) scale(1.02);
       box-shadow: 0 6px 15px rgba(0,0,0,0.15);
-    }
-    .card .media {
-      width: 100%;
-      height: 200px;
-      background: #ddd;
-      display: block;
     }
     .card img { width: 100%; height: 200px; object-fit: cover; display:block; }
     .card h3 { margin: 15px; color: orange; }
@@ -116,13 +109,12 @@
     </nav>
   </header>
 
-  <!-- HERO (uses <img> so fallback works) -->
+  <!-- HERO -->
   <section class="hero" aria-label="hero">
     <img
       class="hero-bg"
       src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=1600&q=80"
-      alt=""
-      onerror='this.onerror=null;this.src="data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'1600\' height=\'800\'><rect width=\'100%25\' height=\'100%25\' fill=\'%23333\'/><text x=\'50%25\' y=\'50%25\' dominant-baseline=\'middle\' text-anchor=\'middle\' font-family=\'Arial\' font-size=\'28\' fill=\'%23fff\'>Hero%20image%20unavailable</text></svg>"'
+      alt="Construction site background"
     />
     <div class="hero-content">
       <h2>Building Your Dream Homes with Strength &amp; Style</h2>
@@ -137,37 +129,25 @@
     <h2>Our Services</h2>
     <div class="services">
       <div class="card">
-        <div class="media">
-          <img
-            src="https://images.unsplash.com/photo-1594223274512-ad4803739b7c?auto=format&fit=crop&w=1200&q=80"
-            alt="Construction"
-            onerror='this.onerror=null;this.src="data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'400\' height=\'200\'><rect width=\'100%25\' height=\'100%25\' fill=\'%23f7f7f7\'/><text x=\'50%25\' y=\'50%25\' dominant-baseline=\'middle\' text-anchor=\'middle\' font-family=\'Arial\' font-size=\'16\' fill=\'%23333\'>Image%20not%20available</text></svg>"'
-          />
-        </div>
+        <img 
+          src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80" 
+          alt="Residential Construction">
         <h3>Residential Construction</h3>
         <p>From foundation to finishing, we build your dream house with precision.</p>
       </div>
 
       <div class="card">
-        <div class="media">
-          <img
-            src="https://images.unsplash.com/photo-1581093588401-22e5fd5f0a9b?auto=format&fit=crop&w=1200&q=80"
-            alt="Interior Design"
-            onerror='this.onerror=null;this.src="data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'400\' height=\'200\'><rect width=\'100%25\' height=\'100%25\' fill=\'%23f7f7f7\'/><text x=\'50%25\' y=\'50%25\' dominant-baseline=\'middle\' text-anchor=\'middle\' font-family=\'Arial\' font-size=\'16\' fill=\'%23333\'>Image%20not%20available</text></svg>"'
-          />
-        </div>
+        <img 
+          src="https://images.unsplash.com/photo-1581093588401-22e5fd5f0a9b?auto=format&fit=crop&w=1200&q=80" 
+          alt="Interior Design">
         <h3>Interior Design</h3>
         <p>Elegant and modern interiors to suit your lifestyle.</p>
       </div>
 
       <div class="card">
-        <div class="media">
-          <img
-            src="https://images.unsplash.com/photo-1581091215367-59ab5f9da2f8?auto=format&fit=crop&w=1200&q=80"
-            alt="Renovation"
-            onerror='this.onerror=null;this.src="data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'400\' height=\'200\'><rect width=\'100%25\' height=\'100%25\' fill=\'%23f7f7f7\'/><text x=\'50%25\' y=\'50%25\' dominant-baseline=\'middle\' text-anchor=\'middle\' font-family=\'Arial\' font-size=\'16\' fill=\'%23333\'>Image%20not%20available</text></svg>"'
-          />
-        </div>
+        <img 
+          src="https://images.unsplash.com/photo-1581091215367-59ab5f9da2f8?auto=format&fit=crop&w=1200&q=80" 
+          alt="Renovation">
         <h3>Renovation</h3>
         <p>Transform old spaces into modern and functional living areas.</p>
       </div>
@@ -179,43 +159,32 @@
     <h2>Recent Projects</h2>
     <div class="projects">
       <div class="card">
-        <div class="media">
-          <img
-            src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?auto=format&fit=crop&w=1200&q=80"
-            alt="Luxury Villa"
-            onerror='this.onerror=null;this.src="data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'400\' height=\'200\'><rect width=\'100%25\' height=\'100%25\' fill=\'%23f7f7f7\'/><text x=\'50%25\' y=\'50%25\' dominant-baseline=\'middle\' text-anchor=\'middle\' font-family=\'Arial\' font-size=\'16\' fill=\'%23333\'>Image%20not%20available</text></svg>"'
-          />
-        </div>
+        <img 
+          src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?auto=format&fit=crop&w=1200&q=80"
+          alt="Luxury Villa">
         <h3>Luxury Villa</h3>
         <p>Designed and built with premium materials.</p>
       </div>
 
       <div class="card">
-        <div class="media">
-          <img
-            src="https://images.unsplash.com/photo-1590608897129-79da98d159d5?auto=format&fit=crop&w=1200&q=80"
-            alt="Modern Apartment"
-            onerror='this.onerror=null;this.src="data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'400\' height=\'200\'><rect width=\'100%25\' height=\'100%25\' fill=\'%23f7f7f7\'/><text x=\'50%25\' y=\'50%25\' dominant-baseline=\'middle\' text-anchor=\'middle\' font-family=\'Arial\' font-size=\'16\' fill=\'%23333\'>Image%20not%20available</text></svg>"'
-          />
-        </div>
+        <img 
+          src="https://images.unsplash.com/photo-1590608897129-79da98d159d5?auto=format&fit=crop&w=1200&q=80"
+          alt="Modern Apartment">
         <h3>Modern Apartment</h3>
         <p>Functional spaces for urban lifestyle.</p>
       </div>
 
       <div class="card">
-        <div class="media">
-          <img
-            src="https://images.unsplash.com/photo-1582582494700-3a2a5f16e7be?auto=format&fit=crop&w=1200&q=80"
-            alt="Office Complex"
-            onerror='this.onerror=null;this.src="data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'400\' height=\'200\'><rect width=\'100%25\' height=\'100%25\' fill=\'%23f7f7f7\'/><text x=\'50%25\' y=\'50%25\' dominant-baseline=\'middle\' text-anchor=\'middle\' font-family=\'Arial\' font-size=\'16\' fill=\'%23333\'>Image%20not%20available</text></svg>"'
-          />
-        </div>
+        <img 
+          src="https://images.unsplash.com/photo-1582582494700-3a2a5f16e7be?auto=format&fit=crop&w=1200&q=80"
+          alt="Office Complex">
         <h3>Office Complex</h3>
         <p>Smart design for corporate needs.</p>
       </div>
     </div>
   </section>
 
+  <!-- Footer -->
   <footer id="contact">
     <p>&copy; 2025 Sai Construction Co. | <a href="#">Contact Us</a></p>
   </footer>
